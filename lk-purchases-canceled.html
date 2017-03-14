@@ -1,0 +1,483 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Name progect</title>
+	<link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+	<link href="bootstrap/select/dist/css/bootstrap-select.min.css" rel="stylesheet">
+	<link rel="stylesheet" href="style.min.css">
+	<link href="https://fonts.googleapis.com/css?family=Roboto:300,400,900&amp;subset=cyrillic" rel="stylesheet">
+	<link rel="stylesheet" href="js/owl-cariusel/owl.carousel.css">
+	<link rel="stylesheet" href="js/owl-cariusel/owl.theme.css">
+	<link rel="stylesheet" href="fonts/font-awesome/css/font-awesome.min.css">
+	<script src="js/jquery/jquery-3.1.1.min.js"></script>
+	<script src="js/jquery/jquery-migrate-3.0.0.min.js"></script>
+	<script rel="stylesheet" src="js/owl-cariusel/owl.carousel.min.js"></script>
+	<script rel="stylesheet" src="bootstrap/js/bootstrap.min.js"></script>
+	<script rel="stylesheet" src="bootstrap/select/js/bootstrap-select.js"></script>
+</head>
+<body>
+	<header>
+		<div class="line-orange">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-2">
+						<button class="city hidden-xs" data-toggle="modal" data-target="#myModal"><i class="fa fa-map-marker"></i> Уфа</button>
+						<button class="city btn-icon hidden-sm hidden-md hidden-lg" data-toggle="modal" data-target="#myModal"><i class="fa fa-map-marker"></i></button>
+						<div class="modal fade bs-example-modal-lg" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+						    <div class="modal-dialog modal-lg modal-set">
+						    	<div class="modal-content">
+						    		<div class="modal-header modal-header-set">
+								    	<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+								        <h4 class="modal-title title-city">Выберете ваш город</h4>
+								    </div>
+						    		<div class="row">
+						    			<div class="col-xs-6">
+						    				<ul class="region-city">
+						    					<li>
+						    						<a href="#">Москва</a>
+						    					</li>
+						    					<li>
+						    						<a href="#">Архангельск</a>
+						    					</li>
+						    					<li>
+						    						<a href="#">Самара</a>
+						    					</li>
+						    					<li>
+						    						<a href="#">Тольятти</a>
+						    					</li>
+						    					<li>
+						    						<a href="#">Волгоград</a>
+						    					</li>
+						    					<li>
+						    						<a href="#">Сызрань</a>
+						    					</li>
+						    				</ul>
+						    			</div>
+						    			<div class="col-xs-6">
+						    				<ul class="region-city">
+						    					<li>
+						    						<a href="#">Таганрок</a>
+						    					</li>
+						    					<li>
+						    						<a href="#">Пятигорск</a>
+						    					</li>
+						    					<li>
+						    						<a href="#">Ломоносов</a>
+						    					</li>
+						    					<li>
+						    						<a href="#">Пушкин</a>
+						    					</li>
+						    					<li>
+						    						<a href="#">Чишмы</a>
+						    					</li>
+						    					<li>
+						    						<a href="#">Бугульма</a>
+						    					</li>
+						    				</ul>
+						    			</div>
+						    		</div>
+						    	</div>
+						    </div>
+						</div>
+						<button class="city btn-icon hidden-sm hidden-md hidden-lg" data-toggle="dropdown"><i class="fa fa-search" aria-hidden="true"></i></button>
+						<ul class="dropdown-menu dropdown-set" role="menu">
+						   	<li>
+						   		<form>
+									<input type="text" class="form-control input-style" placeholder="Поиск по сайту">
+									<button class="search" type="button">
+										<i class="fa fa-search" aria-hidden="true"></i>
+									</button>  
+								</form>
+						   	</li>
+						</ul>
+						<a href="#" class="city btn-icon hidden-sm hidden-md hidden-lg"><i class="fa fa-shopping-cart" aria-hidden="true"></i></a>
+					</div>
+					<div class="col-md-10">
+						<nav class="navbar navbar-setting" role="navigation">
+							<button type="button" class="navbar-toggle button-setting" data-toggle="collapse" data-target=".navbar-collapse">
+								<span class="sr-only">Включить/выключить навигацию</span>
+								<span class="icon-bar"></span>
+								<span class="icon-bar"></span>
+								<span class="icon-bar"></span>
+							</button>
+							<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+								<ul class="nav nav-justified nav-set">
+									<li>
+										<a class="btn-menu" href="about.html">О компании</a>
+									</li>
+									<li>
+										<a class="btn-menu" href="contact.html">Контакты</a>
+									</li>
+									<li>
+										<a class="btn-menu" href="partner.html">Партнерам</a>
+									</li>
+									<li>
+										<a class="btn-menu" href="jobs.html">Вакансии</a>
+									</li>
+									<li>
+										<a class="btn-menu" href="reviews.html">Обзоры</a>
+									</li>
+								</ul>
+							</div>
+						</nav>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="container ident-center">
+			<div class="col-md-3">
+				<a href="index.html" class="logo"><span>kwt</span>market</a>
+			</div>
+			<div class="col-lg-6 col-md-7 col-sm-8">
+				<div class="contact-info">
+					<div class="contact-number">
+						<a href="tel:+78002026006">8 800 202 60 06</a>
+						<button class="request-call hidden-xs" data-toggle="modal" data-target=".bs-example-modal-sm">Заказать звонок</button>
+						<div class="modal fade bs-example-modal-sm" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true">
+						    <div class="modal-dialog modal-sm">
+							    <div class="modal-content">
+							    	<div class="modal-header modal-header-set text-center">
+								    	<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+								        <h4 class="modal-title title-city">Оставьте заявку</h4>
+								        <p class="text-application">перезвоним в течении 5-10 минут.</p>
+								    </div>
+							        <form class="form-set" role="form">
+									    <div class="form-group">
+										    <input type="text" class="form-control" id="exampleInputEmail1" placeholder="Ваше имя" required>
+									    </div>
+									    <div class="form-group">
+										    <input type="email" class="form-control" id="exampleInputEmail1" placeholder="E-mail" required>
+									    </div>
+									    <div class="form-group">
+										    <input type="tel" class="form-control" id="exampleInputPassword1" placeholder="Телефон" required>
+									    </div>
+									    <button class="btn btn-default btn-set">отравить</button>
+									</form>
+							    </div>
+						    </div>
+						</div>
+					</div>
+					<div class="call hidden-xs">
+						<p>Принимаем звонки<br>пн-пт с 10:00 до 19:00</p>
+					</div>
+				</div>
+			</div>
+			<div class="col-lg-3 col-md-2 col-sm-4">
+				<div class="personal-area">
+					<a href="lk.html">Petayzopov@armenka.ru</a>
+				</div>
+			</div>
+		</div>
+		<div class="grey-line">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-4 col-md-4">
+						<div class="deals">
+							<a class="btn btn-default btn-set" href="action.html">
+								<img class="picture-small shares" src="img/badge.png" alt="">акции
+							</a>
+							<a class="btn btn-default btn-set" href="catalog-menu.html">
+								<img class="picture-small" src="img/list.png" alt="">каталог
+							</a>
+						</div>
+					</div>
+					<div class="col-lg-5 col-md-4 col-sm-7 hidden-xs">
+						<form>
+							<input type="text" class="form-control input-style" placeholder="Поиск по сайту">
+							<button class="search" type="button">
+								<i class="fa fa-search" aria-hidden="true"></i>
+							</button>  
+						</form>
+					</div>
+					<div class="col-lg-3 col-md-4 col-sm-5 hidden-xs">
+						<div class="action-tovar">
+							<a class="compare" href="#">
+								<img src="img/libra.png" alt="Сравнить">
+							</a>
+							<a href="basket.html" class="basket">
+								<p><b class="text-black">В корзине</b> <b class="text-orange">2 товара</b><br>на сумму 900 000 руб.</p>
+								<img src="img/basket.png" alt="Корзина">
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</header>
+	<main>
+		<div class="container">
+			<div class="row">
+				<div class="col-md-3">
+					<div class="tovar-navigation">	
+						<a href="lk.html" class="lk-menu">
+							<span class="name-title">Контактные данные</span>
+						</a>
+						<a href="lk-comparison.html" class="lk-menu">
+							<span class="name-title">Сравнение</span>
+						</a>
+						<a href="lk-liked.html" class="lk-menu">
+							<span class="name-title">Избранное</span>
+						</a>
+						<a href="lk-purchases.html" class="lk-menu active">
+							<span class="name-title">Счета</span>
+						</a>
+						<a href="basket.html" class="lk-menu">
+							<span class="name-title">Корзина</span>
+						</a>
+						<a href="index.html" class="lk-menu">
+							<span class="name-title">Выйти</span>
+						</a>
+						<form>
+							<h3>Стоимость доставки</h3>
+						    <div class="form-group">
+						    	<label for="exampleInputEmail1">Откуда</label>
+						    	<input type="text" class="form-control" id="exampleInputEmail1" placeholder="Откуда">
+						    </div>
+						    <div class="form-group">
+						    	<label for="exampleInputPassword1">Куда</label>
+						    	<input type="text" class="form-control" id="exampleInputPassword1" placeholder="Куда">
+						    </div>
+						    <button type="submit" class="btn btn-default">Рассчитать</button>
+						</form>
+					</div>
+				</div>
+				<div class="col-md-9">
+					<div class="tovar-navigation navigation-ident">
+						<div class="clearfix">
+							<div class="col-sm-3">
+								<div class="row">
+									<a href="lk-purchases.html" class="lk-menu">
+										<span class="name-title">Текущий</span>
+									</a>
+								</div>
+							</div>
+							<div class="col-sm-3">
+								<div class="row">
+									<a href="lk-purchases-expectation.html" class="lk-menu">
+										<span class="name-title">Ожидает отгрузки</span>
+									</a>
+								</div>
+							</div>
+							<div class="col-sm-3">
+								<div class="row">
+									<a href="lk-purchases-completed.html" class="lk-menu">
+										<span class="name-title">Завершенные</span>
+									</a>
+								</div>
+							</div>
+							<div class="col-sm-3">
+								<div class="row">
+									<a href="lk-purchases-canceled.html" class="tab active lk-menu">
+										<span class="name-title">Отмененные</span>
+									</a>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="content-set">
+						<h2 class="title-status">Заказы в статусе "Отмененные"</h2>
+						<div class="order-status">
+							<div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+							    <div class="panel panel-default">
+								    <div class="panel-heading" role="tab" id="headingOne">
+								        <h4 class="panel-title">
+									        <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+									          <div class="row">
+								          			<p class="col-xs-8">Заказ №19 от 27.02.17, 3 товара на сумму 1 000 000 руб.</p>
+								        			<p class="col-xs-4 color-data">Заказ отменен: 11.03.17 <span class="glyphicon glyphicon-menu-up" aria-hidden="true"></span></p>
+								        		</div>
+									        </a>
+								        </h4>
+								    </div>
+								    <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
+								        <div class="panel-body">
+									        <fieldset>
+									        	<legend>Оплата</legend>
+									        	<strong>Счет №17/1 от 24.02.17, Наличные средства <span class="denial">Не оплачено</span></strong>
+									        	<p>Сумма к оплате по 100 000 руб</p>
+									        </fieldset>
+									        <fieldset>
+									        	<legend>Доставка</legend>
+									        	<strong>Отгрузка №17/1, Стоимость доставки 3 000 руб <span class="denial">Не отгружено</span></strong>
+									        	<p>Статус отгрузки: <span class="denial">Не отгружено</span></p>
+									        	<p>Служба доставки: СДЭК</p>
+									        	<p>Индификатор отправителя: <span>123456789</span></p>
+									        </fieldset>
+									        <div class="btn-order">
+									        	<a class="more" href="lk-more-order.html">Подробнее о заказе</a>
+									        	<div class="btn-order-return">
+									        		<a href="#"><i class="fa fa-repeat" aria-hidden="true"></i> Повторить заказ</a>
+									        		<a href="#">Отменить заказ</a>
+									        	</div>
+									        </div>
+								        </div>
+								    </div>
+							    </div>
+							    <div class="panel panel-default">
+								    <div class="panel-heading" role="tab" id="headingTwo">
+								        <h4 class="panel-title">
+								        	<a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+								          		<div class="row">
+								          			<p class="col-xs-8">Заказ №19 от 27.02.17, 5 товара на сумму 10 000 000 руб.</p>
+								        			<p class="col-xs-4 color-data">Заказ отменен: 11.03.17 <span class="glyphicon glyphicon-menu-up" aria-hidden="true"></span></p>
+								        		</div>
+								        	</a>
+								        </h4>
+								    </div>
+							    	<div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+								        <div class="panel-body">
+									        <fieldset>
+									        	<legend>Оплата</legend>
+									        	<strong>Счет №17/1 от 24.02.17, Наличные средства <span class="denial">Не оплачено</span></strong>
+									        	<p>Сумма к оплате по 100 000 руб</p>
+									        </fieldset>
+									        <fieldset>
+									        	<legend>Доставка</legend>
+									        	<strong>Отгрузка №17/1, Стоимость доставки 3 000 руб <span class="denial">Не отгружено</span></strong>
+									        	<p>Статус отгрузки: <span class="denial">Не отгружено</span></p>
+									        	<p>Служба доставки: СДЭК</p>
+									        	<p>Индификатор отправителя: <span>123456789</span></p>
+									        </fieldset>
+									        <div class="btn-order">
+									        	<a class="more" href="lk-more-order.html">Подробнее о заказе</a>
+									        	<div class="btn-order-return">
+									        		<a href="#"><i class="fa fa-repeat" aria-hidden="true"></i> Повторить заказ</a>
+									        		<a href="#">Отменить заказ</a>
+									        	</div>
+									        </div>
+								        </div>
+							        </div>
+							    </div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</main>
+	<footer class="grey-line">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12 hidden-sm hidden-xs footer-menu">
+					<a href="#">О компании</a>
+					<a href="#">Контакты</a>
+					<a href="#">Партнерам</a>
+					<a href="#">Акции</a>
+					<a href="#">Доставка и оплата</a>
+					<a href="#">Гарантии и сервис</a>
+					<a href="#">Обзоры и советы</a>
+					<a href="#">Личный кабинет</a>
+					<a href="#">Карта сайта</a>
+				</div>
+				<div class="col-md-3 col-sm-6 ident-bottom">
+					<h4>Наши сайты</h4>
+					<ul>
+						<li>
+							<a href="#">Генераторы</a>
+						</li>
+						<li>
+							<a href="#">Компрессоры</a>
+						</li>
+						<li>
+							<a href="#">Сварочное оборудование</a>
+						</li>
+						<li>
+							<a href="#">Электродвигатели и насосы</a>
+						</li>
+						<li>
+							<a href="#">Минитракторы</a>
+						</li>
+					</ul>
+				</div>
+				<div class="col-md-2 col-sm-6 ident-bottom">
+					<h4>Навигация</h4>
+					<ul>
+						<li>
+							<a href="#">Главная</a>
+						</li>
+						<li>
+							<a href="#">Контакты</a>
+						</li>
+						<li>
+							<a href="#">Новости</a>
+						</li>
+						<li>
+							<a href="#">Статьи</a>
+						</li>
+						<li>
+							<a href="#">Лизинг</a>
+						</li>
+						<li>
+							<a href="#">Доставка</a>
+						</li>
+					</ul>
+				</div>
+				<div class="col-md-3 col-sm-6 ident-bottom">
+					<h4>Свяжитесь с нами</h4>
+					<ul>
+						<li>
+							<a href="#">(347) 246-44-24</a>
+						</li>
+						<li>
+							<a href="#">honda@at-ufa.com</a>
+						</li>
+						<li>
+							<a href="#">Вконтакте</a>
+						</li>
+						<li>
+							<a href="#">Твиттер</a>
+						</li>
+					</ul>
+				</div>
+				<div class="col-md-4 col-sm-6 ident-bottom">
+					<div class="block-right">
+						<div class="oplata">
+							<p>Принимаем к оплате</p>
+							<div class="indent picture">
+								<a href="#">
+									<img src="img/oplata/visa.png" alt="">
+								</a>
+								<a href="#">
+									<img src="img/oplata/mastercard.png" alt="">
+								</a>
+								<a href="#">
+									<img src="img/oplata/webmoney.png" alt="">
+								</a>
+								<a href="#">
+									<img src="img/oplata/qiwi.png" alt="">
+								</a>
+								<a href="#">
+									<img src="img/oplata/yandex.png" alt="">
+								</a>
+							</div>
+						</div>
+						<div class="social">
+							<p>Мы в соцсетях</p>
+							<div class="indent social-name">
+								<a href="#">
+									<img src="img/social/skype.png" alt="">
+								</a>
+								<a href="#">
+									<img src="img/social/vk.png" alt="">
+								</a>
+								<a href="#">
+									<img src="img/social/ok.png" alt="">
+								</a>
+								<a href="#">
+									<img src="img/social/youtube.png" alt="">
+								</a>
+								<a href="#">
+									<img src="img/social/facebook.png" alt="">
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>		
+	</footer>
+	<script type="text/javascript" src="js/skript/script.js"></script>
+</body>
+</html>

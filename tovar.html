@@ -1,0 +1,995 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Name progect</title>
+	<link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+	<link rel="stylesheet" href="style.min.css">
+	<link href="https://fonts.googleapis.com/css?family=Roboto:300,400,900&amp;subset=cyrillic" rel="stylesheet">
+	<link rel="stylesheet" href="js/owl-cariusel/owl.carousel.css">
+	<link rel="stylesheet" href="js/owl-cariusel/owl.theme.css">
+	<link rel="stylesheet" href="fonts/font-awesome/css/font-awesome.min.css">
+	<script src="js/jquery/jquery-3.1.1.min.js"></script>
+	<script src="js/jquery/jquery-migrate-3.0.0.min.js"></script>
+	<script rel="stylesheet" src="js/owl-cariusel/owl.carousel.min.js"></script>
+	<script rel="stylesheet" src="bootstrap/js/bootstrap.min.js"></script>
+	<script rel="stylesheet" src="bootstrap/select/js/bootstrap-select.js"></script>
+</head>
+<body>
+	<header>
+		<div class="line-orange">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-2">
+						<button class="city hidden-xs" data-toggle="modal" data-target="#myModal"><i class="fa fa-map-marker"></i> Уфа</button>
+						<button class="city btn-icon hidden-sm hidden-md hidden-lg" data-toggle="modal" data-target="#myModal"><i class="fa fa-map-marker"></i></button>
+						<div class="modal fade bs-example-modal-lg" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+						    <div class="modal-dialog modal-lg modal-set">
+						    	<div class="modal-content">
+						    		<div class="modal-header modal-header-set">
+								    	<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+								        <h4 class="modal-title title-city">Выберете ваш город</h4>
+								    </div>
+						    		<div class="row">
+						    			<div class="col-xs-6">
+						    				<ul class="region-city">
+						    					<li>
+						    						<a href="#">Москва</a>
+						    					</li>
+						    					<li>
+						    						<a href="#">Архангельск</a>
+						    					</li>
+						    					<li>
+						    						<a href="#">Самара</a>
+						    					</li>
+						    					<li>
+						    						<a href="#">Тольятти</a>
+						    					</li>
+						    					<li>
+						    						<a href="#">Волгоград</a>
+						    					</li>
+						    					<li>
+						    						<a href="#">Сызрань</a>
+						    					</li>
+						    				</ul>
+						    			</div>
+						    			<div class="col-xs-6">
+						    				<ul class="region-city">
+						    					<li>
+						    						<a href="#">Таганрок</a>
+						    					</li>
+						    					<li>
+						    						<a href="#">Пятигорск</a>
+						    					</li>
+						    					<li>
+						    						<a href="#">Ломоносов</a>
+						    					</li>
+						    					<li>
+						    						<a href="#">Пушкин</a>
+						    					</li>
+						    					<li>
+						    						<a href="#">Чишмы</a>
+						    					</li>
+						    					<li>
+						    						<a href="#">Бугульма</a>
+						    					</li>
+						    				</ul>
+						    			</div>
+						    		</div>
+						    	</div>
+						    </div>
+						</div>
+						<button class="city btn-icon hidden-sm hidden-md hidden-lg" data-toggle="dropdown"><i class="fa fa-search" aria-hidden="true"></i></button>
+						<ul class="dropdown-menu dropdown-set" role="menu">
+						   	<li>
+						   		<form>
+									<input type="text" class="form-control input-style" placeholder="Поиск по сайту">
+									<button class="search" type="button">
+										<i class="fa fa-search" aria-hidden="true"></i>
+									</button>  
+								</form>
+						   	</li>
+						</ul>
+						<a href="#" class="city btn-icon hidden-sm hidden-md hidden-lg"><i class="fa fa-shopping-cart" aria-hidden="true"></i></a>
+					</div>
+					<div class="col-md-10">
+						<nav class="navbar navbar-setting" role="navigation">
+							<button type="button" class="navbar-toggle button-setting" data-toggle="collapse" data-target=".navbar-collapse">
+								<span class="sr-only">Включить/выключить навигацию</span>
+								<span class="icon-bar"></span>
+								<span class="icon-bar"></span>
+								<span class="icon-bar"></span>
+							</button>
+							<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+								<ul class="nav nav-justified nav-set">
+									<li>
+										<a class="btn-menu" href="about.html">О компании</a>
+									</li>
+									<li>
+										<a class="btn-menu" href="contact.html">Контакты</a>
+									</li>
+									<li>
+										<a class="btn-menu" href="partner.html">Партнерам</a>
+									</li>
+									<li>
+										<a class="btn-menu" href="jobs.html">Вакансии</a>
+									</li>
+									<li>
+										<a class="btn-menu" href="reviews.html">Обзоры</a>
+									</li>
+								</ul>
+							</div>
+						</nav>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="container ident-center">
+			<div class="col-md-3">
+				<a href="index.html" class="logo"><span>kwt</span>market</a>
+			</div>
+			<div class="col-lg-6 col-md-7 col-sm-8">
+				<div class="contact-info">
+					<div class="contact-number">
+						<a href="tel:+78002026006">8 800 202 60 06</a>
+						<button class="request-call hidden-xs" data-toggle="modal" data-target=".bs-example-modal-sm">Заказать звонок</button>
+						<div class="modal fade bs-example-modal-sm" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true">
+						    <div class="modal-dialog modal-sm">
+							    <div class="modal-content">
+							    	<div class="modal-header modal-header-set text-center">
+								    	<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+								        <h4 class="modal-title title-city">Оставьте заявку</h4>
+								        <p class="text-application">перезвоним в течении 5-10 минут.</p>
+								    </div>
+							        <form class="form-set" role="form">
+									    <div class="form-group">
+										    <input type="text" class="form-control" id="exampleInputEmail1" placeholder="Ваше имя" required>
+									    </div>
+									    <div class="form-group">
+										    <input type="email" class="form-control" id="exampleInputEmail1" placeholder="E-mail" required>
+									    </div>
+									    <div class="form-group">
+										    <input type="tel" class="form-control" id="exampleInputPassword1" placeholder="Телефон" required>
+									    </div>
+									    <button class="btn btn-default btn-set">отравить</button>
+									</form>
+							    </div>
+						    </div>
+						</div>
+					</div>
+					<div class="call hidden-xs">
+						<p>Принимаем звонки<br>пн-пт с 10:00 до 19:00</p>
+					</div>
+				</div>
+			</div>
+			<div class="col-lg-3 col-md-2 col-sm-4">
+				<div class="personal-area">
+					<a href="entry.html">Войти</a>
+					<a href="reg.html">Регистрация</a>
+				</div>
+			</div>
+		</div>
+		<div class="grey-line">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-4 col-md-4">
+						<div class="deals">
+							<a class="btn btn-default btn-set" href="action.html">
+								<img class="picture-small shares" src="img/badge.png" alt="">акции
+							</a>
+							<a class="btn btn-default btn-set" href="catalog-menu.html">
+								<img class="picture-small" src="img/list.png" alt="">каталог
+							</a>
+						</div>
+					</div>
+					<div class="col-lg-5 col-md-4 col-sm-7 hidden-xs">
+						<form>
+							<input type="text" class="form-control input-style" placeholder="Поиск по сайту">
+							<button class="search" type="button">
+								<i class="fa fa-search" aria-hidden="true"></i>
+							</button>  
+						</form>
+					</div>
+					<div class="col-lg-3 col-md-4 col-sm-5 hidden-xs">
+						<div class="action-tovar">
+							<a class="compare" href="#">
+								<img src="img/libra.png" alt="Сравнить">
+							</a>
+							<a href="basket.html" class="basket">
+								<p><b class="text-black">В корзине</b> <b class="text-orange">2 товара</b><br>на сумму 900 000 руб.</p>
+								<img src="img/basket.png" alt="Корзина">
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</header>
+	<main>
+		<div class="container">
+			<ol class="breadcrumb">
+			    <li>
+			    	<a href="#">Главная страница</a>
+			    </li>
+			    <li>
+			    	<a href="#">Генераторы</a>
+				</li>
+			    <li class="active">Дизель генератор Endress ESE 604 DYS ES</li>
+			</ol>
+			<h1 class="title-tovar">Дизель генератор Endress ESE 604 DYS ES</h1>
+			<div class="row">
+				<div class="col-sm-6 col-md-4">
+					<div id="sync1" class="owl-carousel">
+						<div class="item text-center">
+							<a href="#" data-lightbox="tovar">
+								<img class="calk img-responsive" src="img/large.png" alt="Квартира">
+							</a>
+						</div>
+						<div class="item text-center">
+							<a href="#" data-lightbox="tovar">
+								<img class="calk img-responsive" src="img/large.png" alt="Квартира">
+							</a>
+						</div>
+						<div class="item text-center">
+							<a href="#" data-lightbox="tovar">
+								<img class="calk img-responsive" src="img/large.png" alt="Квартира">
+							</a>
+						</div>
+						<div class="item text-center">
+							<a href="#" data-lightbox="tovar">
+								<img class="calk img-responsive" src="img/large.png" alt="Квартира">
+							</a>
+						</div>
+					</div>
+					<div id="sync2" class="owl-carousel picture-rotate">
+						<div class="item">
+							<div class="small-picture">
+								<a href="#">
+									<img class="img-responsive" src="img/large.png" alt="Квартира">
+								</a>
+							</div>
+						</div>
+						<div class="item">
+							<div class="small-picture">
+								<a href="#">
+									<img class="img-responsive" src="img/large.png" alt="Квартира">
+								</a>
+							</div>
+						</div>
+						<div class="item">
+							<div class="small-picture">
+								<a href="#">
+									<img class="img-responsive" src="img/large.png" alt="Квартира">
+								</a>
+							</div>
+						</div>
+						<div class="item">
+							<div class="small-picture"> 
+								<a href="#">
+									<img class="img-responsive" src="img/large.png" alt="Квартира">
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-sm-6 col-md-4">
+					<div class="col-sm-offset-2 col-md-offset-2">
+						<strong>Основные характеристики:</strong>
+						<ul class="main-characteristics">
+							<li class="norm">Мощность номинальная<br><span>40 кВт / 50 кВА</span></li>
+							<li class="reserve">Мощность резервная<br><span>44 кВт / 55 кВА</span></li>
+							<li class="engine">Двигатель<br><span>IVECO N45AM2</span></li>
+							<li class="generator">Генератор<br><span>STAMFORD UCI224E</span></li>
+						</ul>
+					</div>
+				</div>
+
+				<div class="col-md-offset-0 col-sm-offset-3 col-sm-6 col-md-4">
+					<div class="in-total">
+						<p class="price">208 500<i class="fa fa-rub price-icon" aria-hidden="true"></i></p>
+						<form role="form">
+						    <div class="form-group text-center availability">
+						    	<img src="img/galka.png" alt="Товар в наличии">
+						    	<p>В наличии</p>
+						    </div>
+						    <div class="form-group">
+						    	<button type="submit" class="btn btn-default btn-orange">
+						    		<img src="img/basket-small.png" alt=""> В корзину</button>
+						    </div>
+						    <div class="form-group text-center delivery">
+						    	<img src="img/delivery.png" alt="Бесплатная доставка">
+						        <p>Бесплатная доставка</p>
+						    </div>
+						    <div class="form-group text-center credit">
+						    	<img src="img/calculator.png" alt="Рассчитать кредит">
+						        <a href="#">Рассчитать кредит</a>
+						    </div>
+						    <div class="checkbox">
+						    	<label class="border-color">В сравнение
+						    		<i class="fa fa-square-o size-icon" aria-hidden="true"></i>
+					            	<input type="checkbox">
+					        	</label>
+					        	<label>В избранное
+					        		<i class="fa fa-star-o size-icon" aria-hidden="true"></i>
+					            	<input type="checkbox">
+					        	</label>
+						    </div>
+						</form>
+					</div>
+				</div>
+			</div>
+			<div class="tovar-navigation">
+				<div class="tabs-control row">
+					<div class="col-md-3 ident-none">
+						<a class="tab active" data-toggle="tab" href="#panel1">
+							<span class="name-title">Характеристики</span>
+						</a>
+					</div>
+					<div class="col-md-3 ident-none">
+						<a class="tab" data-toggle="tab" href="#panel2">
+							<span class="name-title">Описание</span>
+						</a>
+					</div>
+					<div class="col-md-3 ident-none">
+						<a class="tab" data-toggle="tab" href="#panel3">
+							<span class="name-title">Отзывы</span>
+						</a>
+					</div>
+					<div class="col-md-3 ident-none">
+						<a class="tab" data-toggle="tab" href="#panel4">
+							<span class="name-title">документы</span>
+						</a>
+					</div>
+				</div>
+				<div class="tab-content content-set">
+				    <div class="tab-pane active" id="panel1">
+				    	<div class="row">
+				    		<div class="col-md-6">
+				    			<strong>Основные характеристики</strong>
+				    			<table class="table-striped table-set">
+			    					<tr>
+			    						<td>Основная мощность:</td>
+			    						<td>20 кВт / 25 кВА</td>
+			    					</tr>				
+			    					<tr>
+			    						<td>Резервная мощность:</td>
+			    						<td>22 кВт / 27,5 кВА</td>
+			    					</tr>
+									<tr>
+										<td>Частота тока:</td>
+										<td>50 Гц</td>
+									</tr>
+									<tr>
+										<td>Напряжение:</td>
+										<td>400 В</td>
+									</tr>
+									<tr>
+										<td>Ресурс до капитального ремонта:</td>
+										<td>30000 м.ч.</td>
+									</tr>
+									<tr>
+										<td>Расход топлива при 75% нагрузке:</td>
+										<td>5,5 л/ч</td>
+									</tr>
+									<tr>
+										<td>Расход топлива при 100% нагрузке:</td>
+										<td>7 л/ч</td>
+									</tr>
+									<tr>
+										<td>Вес:</td>
+										<td>590 кг</td>
+									</tr>
+									<tr>
+										<td>Габаритные размеры (Д×Ш×В):</td>
+										<td>1835х730х1416 мм</td>
+									</tr>
+									<tr>
+										<td>Гарантийный срок:</td>
+										<td>24 месяца с момента отгрузки; 18 месяцев с момента ввода в эксплуатацию или 3000 моточасов в зависимости от того какой срок наступит раньше</td>
+									</tr>				
+								</table>
+								<strong>Двигатель</strong>
+								<table class="table-striped table-set">
+									<tr>
+										<td>Модель двигателя:</td>
+									<td><a href="#">IVECO S8000</a></td>
+									</tr>
+									<tr>
+										<td>Страна происхождения:</td>
+										<td><img class="" src="">Италия</td>
+									</tr>							
+									<tr><td>Номинальная мощность:</td><td>32 кВт / 40 кВА</td></tr>
+									<tr>
+										<td>Частота вращения вала двигателя:</td>
+										<td>1500 об/мин</td>
+									</tr>
+									<tr>
+										<td>Тип:</td>
+										<td>дизельный</td>
+									</tr>
+									<tr>
+										<td>Количество цилиндров:</td>
+										<td>3</td>
+									</tr>
+									<tr>
+										<td>Диаметр цилиндра:</td>
+										<td>104 мм</td>
+									</tr>
+									<tr>
+										<td>Ход поршня:</td>
+										<td>115 мм</td>
+									</tr>
+									<tr>
+										<td>Рабочий объем:</td>
+										<td>2,9 л</td>
+									</tr>
+									<tr>
+										<td>Степень сжатия:</td>
+										<td>17:1</td>
+									</tr>
+									<tr>
+										<td>Отличительные особенности (или преимущества):</td>
+										<td>Обладают повышенной работоспособностью и низким уровнем  шума, адаптированы к режиму  максимальной нагрузки</td>
+									</tr>						
+								</table>
+								<strong>Генератор</strong>
+								<table class="table-striped table-set">
+									<tr>
+										<td>Модель генератора:</td>
+										<td><a href="/catalogzp/generatory/tovar/stamford-pi144e/">Stamford PI144E</a>
+										</td>
+									</tr>
+									<tr>
+										<td>Страна происхождения:</td>
+										<td><img class="#" src="">Великобритания</td>
+									</tr>										
+									<tr>
+										<td>Мощность:</td>
+										<td>20 кВт / 25 кВА</td>
+									</tr>
+									<tr>
+										<td>Возможность работы с перегрузкой в 10% в течение 1 часа:</td>
+										<td>да, работа с перегрузкой в 10% в течение 1 часа возможна</td>
+									</tr>
+									<tr>
+										<td>Напряжение:</td>
+										<td>400 В</td>
+									</tr>
+									<tr>
+										<td>Род тока:</td>
+										<td>переменный</td>
+									</tr>
+									<tr>
+										<td>Номинальный коэффициент мощности:</td>
+										<td>0,8</td>
+									</tr>
+									<tr>
+										<td>Номинальный ток:</td>
+										<td>36 А</td>
+									</tr>
+									<tr>
+										<td>Класс изоляции:</td>
+										<td>H</td>
+									</tr>
+									<tr>
+										<td>Степень защиты:</td>
+										<td>IP23</td>
+									</tr>
+								</table>							
+				    		</div>
+				    		<div class="col-md-6">
+				    			<strong>Топливная система</strong>
+				    			<table class="table-striped table-set">
+			    					<tr>
+				    					<td>Топливный бак:</td>
+				    					<td>100 л</td>
+			    					</tr>
+			    					<tr>
+			    						<td>Расход топлива при 75% нагрузке:</td>
+			    						<td>5,5 л/ч</td>
+			    					</tr>
+			    					<tr>
+			    						<td>Расход топлива при 100% нагрузке:</td>
+			    						<td>7 л/ч</td>
+			    					</tr>
+			    					<tr>
+			    						<td>Время автономной работы при 75% мощности:</td>
+			    						<td>18,2 ч</td>
+			    					</tr>
+			    					<tr>
+			    						<td>Время автономной работы при 100% мощности:</td>
+			    						<td>14,3 ч</td>
+			    					</tr>
+			    					<tr>
+			    						<td>Топливные фильтры грубой очистки:</td>
+			    						<td>Поставка с двигателем</td>
+			    					</tr>
+			    					<tr>
+			    						<td>Топливные фильтры тонкой очистки:</td>
+			    						<td>Поставка с двигателем</td>
+			    					</tr>
+			    				</table>
+		    					<strong>Система воздухозабора</strong>				
+			    				<table class="table-striped table-set">
+			    					<tr>
+			    						<td>Воздушный фильтр:</td>
+			    						<td>Поставка с двигателем</td>
+			    					</tr>
+			    				</table>
+		    					<strong>Система газовыхлопа</strong>					
+			    				<table class="table-striped table-set">
+			    					<tr>
+			    						<td>Тип глушителя:</td>
+			    						<td>Промышленный</td>
+			    					</tr>
+			    				</table>
+			    				<strong>Система охлаждения</strong>	
+								<table class="table-striped table-set">
+									<tr>
+										<td>Тип системы охлаждения:</td>
+										<td>Жидкостная</td>
+									</tr>
+									<tr>
+										<td>Тип крыльчатки:</td>
+										<td>Толкающего типа</td>
+									</tr>
+									<tr>
+										<td>Тип охлаждающей жидкости:</td>
+										<td>Низкозамерзающая</td>
+									</tr>
+									<tr>
+										<td>Объем системы охлаждения:</td>
+										<td>20 л</td>
+									</tr>						
+								</table>
+								<strong>Система электрооборудования</strong>
+								<table class="table-striped table-set">
+									<tr>
+										<td>Зарядный генератор:</td>
+										<td>Переменного тока</td>
+									</tr>
+									<tr>
+										<td>Пусковое устройство:</td>
+										<td>Стартер номинальным напряжением 12 В</td>
+									</tr>
+									<tr>
+										<td>Аккумуляторные батареи:</td>
+										<td>6 СТ-90</td>
+									</tr>
+									<tr>
+										<td>Напряжение в системе электрооборудования:</td>
+										<td>24 В В</td>
+									</tr>							
+								</table>
+								<strong>Масляная система</strong>
+								<table class="table-striped table-set">
+									<tr>
+										<td>Объем системы смазки:</td>
+										<td>8,8 л</td>
+									</tr>
+									<tr>
+										<td>Расход масла при 100% нагрузке:</td>
+										<td>0,1%</td>
+									</tr>						
+			    				</table>
+				    		</div>
+				    	</div>
+				    </div>
+				    <div class="tab-pane" id="panel2">
+				    	<h2 class="small-title">Дизель генератор Endress ESE 604 DYS ES</h2>
+				    	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo temporibus ex eum nobis, quae praesentium fugit aperiam! Pariatur, eum repudiandae quas sint sed quis consequatur. Numquam porro inventore distinctio quas!</p>
+				    	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nulla, voluptatem delectus facilis aliquam molestiae? Corrupti beatae pariatur, hic possimus libero earum ipsam, qui amet, nostrum reprehenderit, quibusdam aut molestias. Itaque?</p>
+				    	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quia inventore harum maxime veniam, quibusdam ut. Accusamus explicabo perferendis autem earum aliquid, eos optio ullam odit, ex quidem ut magni error!</p>
+				    </div>
+				    <div class="tab-pane" id="panel3">
+						<h2 class="small-title">Все отзывы</h2>
+						<div class="client-profily">
+							<div class="profile">
+								<div class="name">
+									<img src="img/cat.jpg" alt="profile">
+									<span>Ермолаев Иван</span>
+								</div>
+								<div class="icons">
+									<div class="layout__col">14 декабря 2016<meta itemprop="datePublished" content="14 декабря 2016">,&nbsp;Москва</div>
+									<i class="fa fa-star" aria-hidden="true"></i>
+									<i class="fa fa-star" aria-hidden="true"></i>
+									<i class="fa fa-star" aria-hidden="true"></i>
+									<i class="fa fa-star" aria-hidden="true"></i>
+									<i class="fa fa-star" aria-hidden="true"></i>
+								</div>			
+							</div>
+							<dl class="advantages">
+								<dt>Достоинства:</dt>
+								<dd>Отлично собран, классный экран, iOS шикарна и гораздо приятней на мой взгляд андройда. Много приятных сервисов как Apple Music или Apple Pay. Да все платно, нужно платить за подписки и т.д. и т. п. но в замен получаете отличное устройство кучу шикарных сервисов.</dd>
+							</dl>
+							<dl class="advantages">
+								<dt>Недостатки:</dt>
+								<dd>Карты от Apple плохо подходят для России, лучше Yandex или 2GIS установить.</dd><dd>
+							</dd></dl>
+							<dl class="advantages">
+								<dt>Комментарий:</dt>
+								<dd>Просто iPhone. Удовлетворяет всем потребностям. Кому нужно что-то больше, думать нужно персонально в каком-то направлении. Нужны игры, покупайте консоль, нужна супер качественная музыка, то покупайте хорошие плееры. В этом телефоне есть все, но на уровне "средне" ну в некоторых случаях чуть выше среднего.</dd>
+							</dl>
+						</div>
+				    </div>
+				    <div class="tab-pane" id="panel4">
+						<div class="documents text-center">
+							<h3>Сертификаты</h3>
+								<div class="certs">
+									<a href="#" data-lightbox="certs">
+										<img class="img-responsive"src="img/sertificate/serf-1.jpg" alt="Бензогенератор Endress ESE 1006 DSG-GT ES Duplex купить">
+									</a>
+									<a href="#" data-lightbox="certs">
+										<img class="img-responsive"src="img/sertificate/serf-2.jpg" alt="Бензогенератор Endress ESE 1006 DSG-GT ES Duplex купить">
+									</a>
+									<a href="#" data-lightbox="certs">
+										<img class="img-responsive"src="img/sertificate/serf-3.jpg" alt="Бензогенератор Endress ESE 1006 DSG-GT ES Duplex купить">
+									</a>
+								</div>
+							<h3>Документы</h3>
+							<div class="docs">
+								<a href="" target="_blank">
+									<img src="img/sertificate/doc.png" alt="">
+									<span>Гарантийный талон.docx</span>
+								</a>
+								<a href="3" target="_blank">
+									<img src="img/sertificate/doc.png" alt="">
+									<span>Договор на техническое обслуживание.docx</span>
+								</a>
+								<a href="#" target="_blank">
+									<img src="img/sertificate/doc.png" alt="">
+									<span>Руководство по эксплуатации.pdf</span>
+								</a>
+							</div>
+						</div>
+				    </div>
+				</div>
+			</div>
+		</div>
+		<div class="grey-line">
+			<div class="container">
+				<div class="addition">
+					<div class="row">
+						<div class="col-md-4">
+							<img class="img-center" src="img/3-layers.jpg" alt="">
+							<h2>Пусконаладочные работы</h2>
+							<p>Наши специалисты оказывают полный комплекс услуг по настройке и введнию в эксплатацию оборудования, который включает в себя: диагностику оборудования, проверку правильности его подключения, проверку готовности двигателя, диагностику работоспособности оборудования во всех режимах работы, настройку параметров системы управления, запуск оборудования.</p>
+						</div>
+						<div class="col-md-4">
+							<img class="img-center" src="img/2-layers.jpg" alt="">
+							<h2>Дополнительные услуги</h2>
+							<ul>
+								<li>
+									<a href="#">Проектирование</a>
+								</li>
+								<li>
+									<a href="#">Сервисное обслуживание</a>
+								</li>
+								<li>
+									<a href="#">Обучение персонала</a>
+								</li>
+								<li>
+									<a href="#">Доставка оборудования</a>
+								</li>
+							</ul>
+						</div>
+						<div class="col-md-4">
+							<img class="img-center" src="img/1-layers.jpg" alt="">
+							<h2>гарантия</h2>
+							<p>18 месяцев с момента отгрузки или 12 месяцев с момента ввода в эксплуатацию или 2000 моточасов.</p>
+							<button class="btn btn-default btn-orange"><img src="img/basket-small.png" alt=""> В корзину</button>		
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="container">
+			<div class="similar-tovar">
+				<h2>Вместе с этим товаром приобретают</h2>
+				<div class="row">
+					<div class="col-md-3">
+						<div class="tovar">
+							<div class="row">
+								<div class="col-sm-4 col-md-12">
+									<a class="img-block" href="tovar.html">
+										<h3>Дизель генератор Endress ESE 604 DYS ES</h3>
+										<img class="img-responsive" src="img/motor-2.png" alt="">
+									</a>
+								</div>
+								<div class="col-sm-8 col-md-12">
+									<table class="table-striped table-chr-set">
+										<tr>
+											<td>Основная мощность:</td>
+											<td>20 кВт / 25 кВА</td>
+										</tr>
+										<tr>
+											<td>Резервная мощность:</td>
+											<td>22 кВт / 27,5 кВА</td>
+										</tr>
+										<tr>
+											<td>Частота тока:</td>
+											<td>50 Гц</td>
+										</tr>
+										<tr>
+											<td>Напряжение:</td>
+											<td>400 В</td>
+										</tr>
+									</table>
+									<div class="price-look">
+										<div class="checkbox">
+									    	<label><i class="fa fa-square-o size-icon" aria-hidden="true"></i> сравнение
+								            	<input type="checkbox">
+								        	</label>
+								        	<label><i class="fa fa-star-o size-icon" aria-hidden="true"></i> избранное
+								            	<input type="checkbox">
+								        	</label>
+									    </div>
+										<span class="price">20 200 <i class="fa fa-rub" aria-hidden="true"></i></span>
+										<button class="btn btn-orange"><img src="img/basket-small.png" alt=""> в корзину</button>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-3">
+						<div class="tovar">
+							<div class="row">
+								<div class="col-sm-4 col-md-12">
+									<a class="img-block" href="tovar.html">
+										<h3>Дизель генератор Endress ESE 604 DYS ES</h3>
+										<img class="img-responsive" src="img/motor-3.png" alt="">
+									</a>
+								</div>
+								<div class="col-sm-8 col-md-12">
+									<table class="table-striped table-chr-set">
+										<tr>
+											<td>Основная мощность:</td>
+											<td>20 кВт / 25 кВА</td>
+										</tr>
+										<tr>
+											<td>Резервная мощность:</td>
+											<td>22 кВт / 27,5 кВА</td>
+										</tr>
+										<tr>
+											<td>Частота тока:</td>
+											<td>50 Гц</td>
+										</tr>
+										<tr>
+											<td>Напряжение:</td>
+											<td>400 В</td>
+										</tr>
+									</table>
+									<div class="price-look">
+										<div class="checkbox">
+									    	<label><i class="fa fa-square-o size-icon" aria-hidden="true"></i> сравнение
+								            	<input type="checkbox">
+								        	</label>
+								        	<label><i class="fa fa-star-o size-icon" aria-hidden="true"></i> избранное
+								            	<input type="checkbox">
+								        	</label>
+									    </div>
+										<span class="price">20 200 <i class="fa fa-rub" aria-hidden="true"></i></span>
+										<button class="btn btn-orange"><img src="img/basket-small.png" alt=""> в корзину</button>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-3">
+						<div class="tovar">
+							<div class="row">
+								<div class="col-sm-4 col-md-12">
+									<a class="img-block" href="tovar.html">
+										<h3>Дизель генератор Endress ESE 604 DYS ES</h3>
+										<img class="img-responsive" src="img/motor-4.png" alt="">
+									</a>
+								</div>
+								<div class="col-sm-8 col-md-12">
+									<table class="table-striped table-chr-set">
+										<tr>
+											<td>Основная мощность:</td>
+											<td>20 кВт / 25 кВА</td>
+										</tr>
+										<tr>
+											<td>Резервная мощность:</td>
+											<td>22 кВт / 27,5 кВА</td>
+										</tr>
+										<tr>
+											<td>Частота тока:</td>
+											<td>50 Гц</td>
+										</tr>
+										<tr>
+											<td>Напряжение:</td>
+											<td>400 В</td>
+										</tr>
+									</table>
+									<div class="price-look">
+										<div class="checkbox">
+									    	<label><i class="fa fa-square-o size-icon" aria-hidden="true"></i> сравнение
+								            	<input type="checkbox">
+								        	</label>
+								        	<label><i class="fa fa-star-o size-icon" aria-hidden="true"></i> избранное
+								            	<input type="checkbox">
+								        	</label>
+									    </div>
+										<span class="price">20 200 <i class="fa fa-rub" aria-hidden="true"></i></span>
+										<button class="btn btn-orange"><img src="img/basket-small.png" alt=""> в корзину</button>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-3">
+						<div class="tovar">
+							<div class="row">
+								<div class="col-sm-4 col-md-12">
+									<a class="img-block" href="tovar.html">
+										<h3>Дизель генератор Endress ESE 604 DYS ES</h3>
+										<img class="img-responsive" src="img/motor.png" alt="">
+									</a>
+								</div>
+								<div class="col-sm-8 col-md-12">
+									<table class="table-striped table-chr-set">
+										<tr>
+											<td>Основная мощность:</td>
+											<td>20 кВт / 25 кВА</td>
+										</tr>
+										<tr>
+											<td>Резервная мощность:</td>
+											<td>22 кВт / 27,5 кВА</td>
+										</tr>
+										<tr>
+											<td>Частота тока:</td>
+											<td>50 Гц</td>
+										</tr>
+										<tr>
+											<td>Напряжение:</td>
+											<td>400 В</td>
+										</tr>
+									</table>
+									<div class="price-look">
+										<div class="checkbox">
+									    	<label><i class="fa fa-square-o size-icon" aria-hidden="true"></i> сравнение
+								            	<input type="checkbox">
+								        	</label>
+								        	<label><i class="fa fa-star-o size-icon" aria-hidden="true"></i> избранное
+								            	<input type="checkbox">
+								        	</label>
+									    </div>
+										<span class="price">20 200 <i class="fa fa-rub" aria-hidden="true"></i></span>
+										<button class="btn btn-orange"><img src="img/basket-small.png" alt=""> в корзину</button>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>			
+			</div>
+		</div>
+	</main>
+	<footer class="grey-line">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12 hidden-sm hidden-xs footer-menu">
+					<a href="#">О компании</a>
+					<a href="#">Контакты</a>
+					<a href="#">Партнерам</a>
+					<a href="#">Акции</a>
+					<a href="#">Доставка и оплата</a>
+					<a href="#">Гарантии и сервис</a>
+					<a href="#">Обзоры и советы</a>
+					<a href="#">Личный кабинет</a>
+					<a href="#">Карта сайта</a>
+				</div>
+				<div class="col-md-3 col-sm-6 ident-bottom">
+					<h4>Наши сайты</h4>
+					<ul>
+						<li>
+							<a href="#">Генераторы</a>
+						</li>
+						<li>
+							<a href="#">Компрессоры</a>
+						</li>
+						<li>
+							<a href="#">Сварочное оборудование</a>
+						</li>
+						<li>
+							<a href="#">Электродвигатели и насосы</a>
+						</li>
+						<li>
+							<a href="#">Минитракторы</a>
+						</li>
+					</ul>
+				</div>
+				<div class="col-md-2 col-sm-6 ident-bottom">
+					<h4>Навигация</h4>
+					<ul>
+						<li>
+							<a href="#">Главная</a>
+						</li>
+						<li>
+							<a href="#">Контакты</a>
+						</li>
+						<li>
+							<a href="#">Новости</a>
+						</li>
+						<li>
+							<a href="#">Статьи</a>
+						</li>
+						<li>
+							<a href="#">Лизинг</a>
+						</li>
+						<li>
+							<a href="#">Доставка</a>
+						</li>
+
+					</ul>
+				</div>
+				<div class="col-md-3 col-sm-6 ident-bottom">
+					<h4>Свяжитесь с нами</h4>
+					<ul>
+						<li>
+							<a href="#">(347) 246-44-24</a>
+						</li>
+						<li>
+							<a href="#">honda@at-ufa.com</a>
+						</li>
+						<li>
+							<a href="#">Вконтакте</a>
+						</li>
+						<li>
+							<a href="#">Твиттер</a>
+						</li>
+					</ul>
+				</div>
+				<div class="col-md-4 col-sm-6 ident-bottom">
+					<div class="block-right">
+						<div class="oplata">
+							<p>Принимаем к оплате</p>
+							<div class="indent picture">
+								<a href="#">
+									<img src="img/oplata/visa.png" alt="">
+								</a>
+								<a href="#">
+									<img src="img/oplata/mastercard.png" alt="">
+								</a>
+								<a href="#">
+									<img src="img/oplata/webmoney.png" alt="">
+								</a>
+								<a href="#">
+									<img src="img/oplata/qiwi.png" alt="">
+								</a>
+								<a href="#">
+									<img src="img/oplata/yandex.png" alt="">
+								</a>
+							</div>
+						</div>
+						<div class="social">
+							<p>Мы в соцсетях</p>
+							<div class="indent social-name">
+								<a href="#">
+									<img src="img/social/skype.png" alt="">
+								</a>
+								<a href="#">
+									<img src="img/social/vk.png" alt="">
+								</a>
+								<a href="#">
+									<img src="img/social/ok.png" alt="">
+								</a>
+								<a href="#">
+									<img src="img/social/youtube.png" alt="">
+								</a>
+								<a href="#">
+									<img src="img/social/facebook.png" alt="">
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>		
+	</footer>
+	<script type="text/javascript" src="js/skript/script.js"></script>
+</body>
+</html>

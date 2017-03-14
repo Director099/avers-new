@@ -1,0 +1,124 @@
+main {
+	.total-order {
+		border: 1px solid #dcdcdc;
+		margin-bottom: 25px;
+		.tovar-basket {
+			padding: 0;
+		    border-radius: 0;
+		    margin-bottom: 0;
+		    border-bottom: 1px solid #dcdcdc;
+		    border-top: none;
+		    border-left: none;
+		    border-right: none;
+			
+			.img-center {
+				margin: 0 auto;
+			}
+
+			.title-basket {
+				margin-top: 5px;
+				font: 300 15px/20px "Roboto","Arial",sans-serif;
+			}
+			
+			.table-chr-set {
+				tr {
+					td {
+						font-size: 14px;
+					}
+				}
+			}
+
+			.price-look {
+				.price {
+					margin-right: 10px;
+					font-size: 25px;
+					&.old-price {
+				    	text-decoration: line-through;
+				    	color: #ff9635;
+			    	    font-size: 20px;
+						font-weight: 300;
+						margin-bottom: 5px;
+				    }
+				}
+			}
+
+			.table-chr-set {
+		    	margin-bottom: 0;
+		    	border-top: none;
+		    }
+			.dtn-remove {
+				background: #fff;
+				font-size: 20px;
+				padding: 0;
+				margin-top: 20px;
+			}
+		}
+		
+		.form-cont-set {
+			height: 28px;
+		}
+
+		.price-total {
+			background: #eee;
+		    padding: 10px 0;
+		    .in-all {
+		    	font-size: 25px;
+    			font-weight: 400;
+    			text-align: center;
+		    }
+
+		    .btn-orange {
+		    	display: block;
+		    	margin: 0 auto;
+		    	font-size: 15px;
+		    	width: 250px;
+		    	margin-top: 34px;
+		    }
+
+		    .next-btn {
+	    	    background: #ff0000;
+			    display: block;
+			    width: 220px;
+			    padding: 8px;
+			    text-transform: uppercase;
+			    color: #fff;
+			    margin-left: auto;
+			    margin-right: auto;
+			    font-size: 15px;
+    			font-weight: 300;
+		    }
+		}
+	}
+}
+
+@media (max-width: 767px) {
+	main {
+		.total-order {
+			.tovar-basket {
+				.dtn-remove {
+					background: #fff;
+					font-size: 20px;
+					padding: 0;
+					margin-top: 10px;
+				}
+				.price-look {
+					.price { 
+						font-size: 15px;
+						margin-bottom: 5px;
+						.fa-rub {
+							font-size: 14px;
+						}
+						&.old-price {
+							font-size: 12px;
+							line-height: 10px;
+							margin-bottom: 0;
+							.fa-rub {
+								font-size: 12px;
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}

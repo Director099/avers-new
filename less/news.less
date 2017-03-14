@@ -1,0 +1,117 @@
+.news {
+	padding-top: 10px;
+}
+
+.block-posts .tab-content .news-thumbnail {
+    margin-top: 20px;
+}
+
+.thumbnail {
+    border: none;
+    padding: 0;
+    position: relative;
+    overflow: hidden;
+    height: 370px;
+    max-height: 462px;
+    border-radius: 0;
+    background: rgba(255,255,255,0.1);
+    &:hover {
+    	.forImg {
+    		img {
+			    transform: translate3d(0, 0, 20px);
+			    opacity: 1;
+    		}
+    	}
+    } 
+}
+
+.thumbnail .caption {
+    display: inline-block;
+    padding: 0;
+}
+
+.thumbnail .forImg {
+    position: relative;
+    overflow: hidden;
+    -moz-perspective: 1000px;
+    -webkit-perspective: 1000px;
+    perspective: 1000px;
+}
+
+.thumbnail .caption h3 {
+    font-weight: 600;
+    line-height: 22px;
+    font-size: 1em;
+    color: #051945;
+    margin-top: 7px;
+    cursor: default;
+    text-overflow: ellipsis;
+    height: 63px;
+    overflow: hidden;
+}
+
+
+.thumbnail .footer {
+    position: absolute;
+    background: #fff;
+    bottom: 0px;
+    border-top: 1px solid #aaa;
+    width: 100%;
+    display: block;
+    padding: 5px 0;
+    box-shadow: 0px 0px 30px 28px #fff;
+}
+
+.thumbnail .footer .time {
+    padding: 10px 0px;
+    float: left;
+    display: block;
+}
+
+.thumbnail .footer a {
+    float: right;
+    text-decoration: none;
+    padding: 10px 15px;
+    -webkit-transition: all 250ms ease-out;
+    -moz-transition: all 250ms ease-out;
+    -o-transition: all 250ms ease-out;
+    transition: all 250ms ease-out;
+    &:hover {
+		color: #fff;
+	}
+}
+
+.thumbnail .forImg img {
+    position: relative;
+    display: block;
+    min-height: 100%;
+    max-width: 105%;
+    -moz-transform: translate3d(0, 0, 0);
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+    transition: all 1s ease;
+    width: 105%;
+    opacity: 0.85;
+    height: 85px;
+}
+
+.thumbnail .caption h3 {
+    font-weight: 600;
+    line-height: 22px;
+    font-size: 1em;
+    color: #051945;
+    margin-top: 7px;
+    cursor: default;
+    text-overflow: ellipsis;
+    height: 63px;
+    overflow: hidden;
+}
+
+article {
+    .news-img {
+        float: left;
+        margin-right: 25px;
+        margin-bottom: 15px;
+        margin-top: 3px;
+    }
+}
