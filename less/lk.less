@@ -1,6 +1,8 @@
 main {
 	.title-reg {
 		text-align: center;
+		margin-top: 20px;
+		margin-bottom: 20px;
 	}
 
 	.tovar-navigation {
@@ -10,25 +12,38 @@ main {
 		    text-decoration: none;
 		    text-align: center;
 		    color: #fff;
-		    background: #00a2ef;
+		    background: #012978;
 		    margin-bottom: 10px;
-		    text-transform: uppercase;
-		    padding: 5px 0;
+		    // text-transform: uppercase;
+		    padding: 8.5px 0;
 		    transition: 250ms ease-in;
 		    &.active {
-	    	    background: #ff8516;
+	    	    background: #ec0101;
 				color: #fff;
 				transition: 250ms ease-in;
 		    }
 		}
+		&.navigation-ident {
+			.tab {
+				text-transform: capitalize;
+				font-size: 14px;
+			}
+		}
+
+		&.tovar-ident {
+			margin-top: 30px;
+		}
 	}
 
+
+
 	.ident {
-		margin-top: 40px;
+		margin-top: 20px;
+		margin-bottom: 20px;
 	}
 
 	.content-lk-set {
-		margin-top: 15px;
+		margin-top: 30px;
 		box-shadow: 0 0px 5px 0 rgba(0,0,0,.25);
 		border: 0;
 	}
@@ -51,7 +66,7 @@ main {
 	    	margin-left: 10px;
 	    }
 	    .btn-orange {
-	    	margin-top: 20px;
+	    	margin-top: 15px;
 	    }
 		
 		.label-set {
@@ -80,7 +95,7 @@ main {
 	    			padding-top: 0;
 	    			padding-bottom: 0;
 		    		&.active {
-		    			color: #ff8516;
+		    			color: #ec0101;
 		    			box-shadow: none;
 		    		}
 		    	}
@@ -98,17 +113,8 @@ main {
 		}
 
 		.btn-set-blue {
-		    display: block;
-		    font-size: 18px;
-		    text-decoration: none;
-		    text-align: center;
-		    color: #fff;
-		    background: #00a2ef;
 		    margin-top: 10px;
 		    margin-bottom: 10px;
-		    text-transform: uppercase;
-		    padding: 8px 0;
-		    transition: 250ms ease-in;
 		}
 	}
 
@@ -126,5 +132,8 @@ main {
 	.border-none {
 		box-shadow: none;
 		border: none;
+		padding-top: 0;
+		padding-bottom: 0;
+		margin-top: 0;
 	}
 }

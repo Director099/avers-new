@@ -1,14 +1,19 @@
 body {
-	font: 300 14px/25px "Roboto", "Arial", sans-serif;
+	font: 400 14px/25px "Roboto", "Arial", sans-serif;
 }
 
 .grey-line {
 	background: #eee;
+	&.border-line {
+		border-bottom: 1px solid #012978;
+		margin-top: 5px;
+	}
 }
 
 .title-tovar {
 	font-size: 25px;
 	margin-bottom: 20px;
+	margin-top: 5px;
 }
 
 .btn-orange {
@@ -42,11 +47,12 @@ body {
 
     img {
     	margin-bottom: 5px;
+    	width: 16px;
     }
 }
 
 .btn-set-blue {
-	font: 400 18px "Roboto", "Arial", sans-serif;
+	font: 400 14px "Roboto", "Arial", sans-serif;
 	width: 100%;
 	background: #012978;
 	color: #fff;
@@ -54,7 +60,7 @@ body {
 	text-transform: uppercase;
 	border: none;
 	border-radius: 4px;
-	padding: 12px 0px;
+	padding: 11.5px 0px;
 	&:hover {
 		border-color: transparent;
 		color: #fff;
@@ -83,8 +89,11 @@ body {
 header {
 	.line-shadow {
 		box-shadow: 0 3px 7px 0px rgba(0, 0, 0, 0.1);
-		margin-bottom: 25px;
 		padding: 15px 0;
+		&.ident-shadow {
+			margin-bottom: 30px;
+		}
+
 		.logo {
 			text-align: center;
 			text-decoration: none;
@@ -470,7 +479,7 @@ header {
 
 .tovar-navigation {
 	margin-top: 15px;
-	margin-bottom: 40px;
+	// margin-bottom: 40px;
 	.ident-none {
 		padding: 0;
 		border-right: 1px solid #fff;
@@ -527,7 +536,7 @@ header {
     box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.25);
     border-radius: 2px;
     transition: all 250ms ease-out;
-    margin-bottom: 20px;
+    margin-bottom: 30px;
 
 	.table-set {
 		border-collapse: separate;
@@ -585,7 +594,7 @@ header {
 			a {
 				color: #000;
 				text-decoration: underline;
-				padding-left: 15px;
+				padding-left: 20px;
 			}
 			&::before {
 				content: "";
@@ -593,22 +602,22 @@ header {
 				width: 10px; 
 				height: 10px;
 				top: 7px;
-				border-radius: 3px;
-				background-image: linear-gradient(135deg, #0ba9f0 50%, #0099e1 50%);
+				border-radius: 4px;
+				background: #001d66;
 			}	
 		}
 	}
 }
 
 .similar-tovar {
-	margin-top: 25px;
-	margin-bottom: 30px;
+	// margin-top: 25px;
+	margin-bottom: 15px;
 	h2 {
 		font: 400 24px/25px "Roboto", "Arial", sans-serif;
 		text-transform: uppercase;
 		text-align: center;
 		margin-top: 0;
-    	margin-bottom: 20px;
+    	margin-bottom: 30px;
 	}
 }
 
@@ -628,7 +637,7 @@ header {
 		color: #000;
 		margin-bottom: 20px;
 		h3 {
-			font: 300 15px/20px "Roboto", "Arial", sans-serif;
+			font: 400 15px/20px "Roboto", "Arial", sans-serif;
 			padding-top: 15px;
 			margin-top: 0;
 		}
@@ -681,7 +690,8 @@ header {
 		.btn-orange {
 	    	width: 100%;
 			margin-bottom: 15px;
-			font-size: 18px;
+			// font-size: 18px;
+			padding: 10px 0;
 	    }
 	}
 
@@ -720,7 +730,7 @@ footer {
     	a {
     		color: #000;
     		&:hover {
-    			color: #ff8516;
+    			color: #ec0101;
     			text-decoration: none;
     		}
     	}
@@ -741,11 +751,11 @@ footer {
 				a {
 					color: #000;
 					&:hover {
-		    			color: #ff8516;
+		    			color: #ec0101;
 		    			text-decoration: none;
 		    		}
 		    		&:focus {
-
+						text-decoration: none;
 		    		}
 				}
 			}
@@ -769,10 +779,6 @@ footer {
 			}
 		}
 	}
-}
-
-footer {
-	    border-top: 1px solid #012978;
 }
 
 @media (min-width: 991px) and (max-width: 1199px) {

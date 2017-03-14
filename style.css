@@ -1,12 +1,17 @@
 body {
-  font: 300 14px/25px "Roboto", "Arial", sans-serif;
+  font: 400 14px/25px "Roboto", "Arial", sans-serif;
 }
 .grey-line {
   background: #eee;
 }
+.grey-line.border-line {
+  border-bottom: 1px solid #012978;
+  margin-top: 5px;
+}
 .title-tovar {
   font-size: 25px;
   margin-bottom: 20px;
+  margin-top: 5px;
 }
 .btn-orange {
   position: relative;
@@ -34,9 +39,10 @@ body {
 }
 .btn-orange img {
   margin-bottom: 5px;
+  width: 16px;
 }
 .btn-set-blue {
-  font: 400 18px "Roboto", "Arial", sans-serif;
+  font: 400 14px "Roboto", "Arial", sans-serif;
   width: 100%;
   background: #012978;
   color: #fff;
@@ -44,7 +50,7 @@ body {
   text-transform: uppercase;
   border: none;
   border-radius: 4px;
-  padding: 12px 0px;
+  padding: 11.5px 0px;
 }
 .btn-set-blue:hover {
   border-color: transparent;
@@ -69,8 +75,10 @@ body {
 }
 header .line-shadow {
   box-shadow: 0 3px 7px 0px rgba(0, 0, 0, 0.1);
-  margin-bottom: 25px;
   padding: 15px 0;
+}
+header .line-shadow.ident-shadow {
+  margin-bottom: 30px;
 }
 header .line-shadow .logo {
   text-align: center;
@@ -401,7 +409,6 @@ header .line-orange .ident-icon {
 }
 .tovar-navigation {
   margin-top: 15px;
-  margin-bottom: 40px;
 }
 .tovar-navigation .ident-none {
   padding: 0;
@@ -450,7 +457,7 @@ header .line-orange .ident-icon {
   box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.25);
   border-radius: 2px;
   transition: all 250ms ease-out;
-  margin-bottom: 20px;
+  margin-bottom: 30px;
 }
 .content-set .table-set {
   border-collapse: separate;
@@ -499,7 +506,7 @@ header .line-orange .ident-icon {
 .addition ul li a {
   color: #000;
   text-decoration: underline;
-  padding-left: 15px;
+  padding-left: 20px;
 }
 .addition ul li::before {
   content: "";
@@ -507,19 +514,18 @@ header .line-orange .ident-icon {
   width: 10px;
   height: 10px;
   top: 7px;
-  border-radius: 3px;
-  background-image: linear-gradient(135deg, #0ba9f0 50%, #0099e1 50%);
+  border-radius: 4px;
+  background: #001d66;
 }
 .similar-tovar {
-  margin-top: 25px;
-  margin-bottom: 30px;
+  margin-bottom: 15px;
 }
 .similar-tovar h2 {
   font: 400 24px/25px "Roboto", "Arial", sans-serif;
   text-transform: uppercase;
   text-align: center;
   margin-top: 0;
-  margin-bottom: 20px;
+  margin-bottom: 30px;
 }
 .tovar {
   position: relative;
@@ -538,7 +544,7 @@ header .line-orange .ident-icon {
   margin-bottom: 20px;
 }
 .tovar .img-block h3 {
-  font: 300 15px/20px "Roboto", "Arial", sans-serif;
+  font: 400 15px/20px "Roboto", "Arial", sans-serif;
   padding-top: 15px;
   margin-top: 0;
 }
@@ -583,7 +589,7 @@ header .line-orange .ident-icon {
 .tovar .price-look .btn-orange {
   width: 100%;
   margin-bottom: 15px;
-  font-size: 18px;
+  padding: 10px 0;
 }
 .tovar .checkbox {
   display: -ms-flexbox;
@@ -622,7 +628,7 @@ footer .footer-menu a {
   color: #000;
 }
 footer .footer-menu a:hover {
-  color: #ff8516;
+  color: #ec0101;
   text-decoration: none;
 }
 footer .ident-bottom {
@@ -641,7 +647,10 @@ footer .ident-bottom ul li a {
   color: #000;
 }
 footer .ident-bottom ul li a:hover {
-  color: #ff8516;
+  color: #ec0101;
+  text-decoration: none;
+}
+footer .ident-bottom ul li a:focus {
   text-decoration: none;
 }
 footer .ident-bottom .block-right {
@@ -659,12 +668,8 @@ footer .ident-bottom .block-right .indent {
 footer .ident-bottom .block-right .oplata {
   margin-bottom: 25px;
 }
-footer {
-  border-top: 1px solid #012978;
-}
 .catalog-menu {
-  margin-top: 10px;
-  margin-bottom: 25px;
+  margin-bottom: 30px;
 }
 .catalog-menu .name-catalog {
   background: #012978 url("img/menu-icon.png") no-repeat 10px;
@@ -696,7 +701,7 @@ footer {
 }
 .catalog-menu .block-shadow .catalog-list li a:hover {
   text-decoration: none;
-  color: #ff8516;
+  color: #ec0101;
 }
 .catalog-menu .block-shadow .catalog-list li a:focus {
   outline: none;
@@ -720,7 +725,7 @@ footer {
 .catalog-menu .btn-orange {
   text-align: left;
   font: 400 18px "Roboto", "Arial", sans-serif;
-  padding: 11px 0px 11px 35px;
+  padding: 9px 0px 9px 35px;
   background: #ec0101 url("img/attention.png") no-repeat 10px;
   background-size: 18px;
 }
@@ -757,11 +762,8 @@ footer {
 .catalog-menu .item {
   border-radius: 4px;
 }
-.catalog-menu .item .center-slide {
-  position: absolute;
-  top: 50%;
-  margin-top: -160px;
-  margin-left: 5%;
+.catalog-menu .item img {
+  border-radius: 4px;
 }
 .catalog-menu .item .text-slide {
   position: absolute;
@@ -787,7 +789,6 @@ footer {
 form .title-name {
   display: block;
   font-weight: 400;
-  text-transform: uppercase;
   text-align: center;
 }
 form .form-group .input-ident {
@@ -814,16 +815,19 @@ form .form-group .btn-info:hover {
   background: #fff;
   color: #000;
 }
+form .form-group .btn-info .filter-option {
+  text-transform: capitalize;
+}
 form .form-group .open > .dropdown-toggle.btn-info {
-  background: #ff8516;
+  background: #012978;
   border-color: transparent;
   box-shadow: none;
 }
 form .form-group .dropdown-menu {
   padding: 0;
 }
-form .form-group .dropdown-menu ul li a {
-  text-transform: uppercase;
+form .form-group .dropdown-menu ul {
+  border-radius: 4px !important;
 }
 form .form-group .dropdown-menu ul li a:focus {
   outline: none !important;
@@ -831,8 +835,16 @@ form .form-group .dropdown-menu ul li a:focus {
   color: #000;
 }
 form .form-group .dropdown-menu ul li a:hover {
-  background: #ff8516;
-  color: #000;
+  background: #012978;
+  color: #fff;
+}
+form .form-group .dropdown-menu ul li:first-child:hover a {
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
+}
+form .form-group .dropdown-menu ul li:last-child:hover a {
+  border-bottom-left-radius: 4px;
+  border-bottom-right-radius: 4px;
 }
 form .checkbox-selection {
   display: -ms-flexbox;
@@ -859,7 +871,6 @@ form .checkbox-selection label {
   padding-bottom: 5px;
   padding-left: 30px;
   font: 15px/20px "PT Sans", "Arial", sans-serif;
-  text-transform: uppercase;
   cursor: pointer;
   color: #000;
 }
@@ -884,9 +895,14 @@ main .category-tovar .tovar-navigation {
 }
 main .category-tovar .name-category {
   margin-top: 0;
+  line-height: 22px;
 }
 main .category-tovar .center-paginator {
   text-align: center;
+}
+main .category-tovar .center-paginator .pagination {
+  margin-top: 20px;
+  margin-bottom: 25px;
 }
 main .category-tovar .center-paginator .pagination .active a {
   background: #ec0101;
@@ -901,6 +917,8 @@ main .category-tovar .content-set .input-group-set:first-child {
 }
 main .title-reg {
   text-align: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
 main .tovar-navigation .lk-menu {
   display: block;
@@ -908,22 +926,29 @@ main .tovar-navigation .lk-menu {
   text-decoration: none;
   text-align: center;
   color: #fff;
-  background: #00a2ef;
+  background: #012978;
   margin-bottom: 10px;
-  text-transform: uppercase;
-  padding: 5px 0;
+  padding: 8.5px 0;
   transition: 250ms ease-in;
 }
 main .tovar-navigation .lk-menu.active {
-  background: #ff8516;
+  background: #ec0101;
   color: #fff;
   transition: 250ms ease-in;
 }
+main .tovar-navigation.navigation-ident .tab {
+  text-transform: capitalize;
+  font-size: 14px;
+}
+main .tovar-navigation.tovar-ident {
+  margin-top: 30px;
+}
 main .ident {
-  margin-top: 40px;
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
 main .content-lk-set {
-  margin-top: 15px;
+  margin-top: 30px;
   box-shadow: 0 0px 5px 0 rgba(0, 0, 0, 0.25);
   border: 0;
 }
@@ -949,7 +974,7 @@ main .reg-content-set .checkbox-inline {
 }
 main .content-lk-set .btn-orange,
 main .reg-content-set .btn-orange {
-  margin-top: 20px;
+  margin-top: 15px;
 }
 main .content-lk-set .label-set,
 main .reg-content-set .label-set {
@@ -984,7 +1009,7 @@ main .reg-content-set .catalog-control .sort-control a {
 }
 main .content-lk-set .catalog-control .sort-control a.active,
 main .reg-content-set .catalog-control .sort-control a.active {
-  color: #ff8516;
+  color: #ec0101;
   box-shadow: none;
 }
 main .content-lk-set .remember,
@@ -1001,17 +1026,8 @@ main .reg-content-set .remember {
 }
 main .content-lk-set .btn-set-blue,
 main .reg-content-set .btn-set-blue {
-  display: block;
-  font-size: 18px;
-  text-decoration: none;
-  text-align: center;
-  color: #fff;
-  background: #00a2ef;
   margin-top: 10px;
   margin-bottom: 10px;
-  text-transform: uppercase;
-  padding: 8px 0;
-  transition: 250ms ease-in;
 }
 main .reg-content-set .form-set {
   border-radius: 0;
@@ -1024,6 +1040,13 @@ main .reg-content-set .form-set {
 main .border-none {
   box-shadow: none;
   border: none;
+  padding-top: 0;
+  padding-bottom: 0;
+  margin-top: 0;
+}
+main .my-basket {
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
 main .total-order {
   border: 1px solid #dcdcdc;
@@ -1043,7 +1066,7 @@ main .total-order .tovar-basket .img-center {
 }
 main .total-order .tovar-basket .title-basket {
   margin-top: 5px;
-  font: 300 15px/20px "Roboto", "Arial", sans-serif;
+  font: 400 15px/20px "Roboto", "Arial", sans-serif;
 }
 main .total-order .tovar-basket .table-chr-set tr td {
   font-size: 14px;
@@ -1081,15 +1104,13 @@ main .total-order .price-total .in-all {
   font-weight: 400;
   text-align: center;
 }
-main .total-order .price-total .btn-orange {
+main .total-order .price-total .btn-set-blue {
   display: block;
   margin: 0 auto;
-  font-size: 15px;
   width: 250px;
-  margin-top: 34px;
+  margin-top: 30px;
 }
-main .total-order .price-total .next-btn {
-  background: #ff0000;
+main .total-order .price-total .btn-orange {
   display: block;
   width: 220px;
   padding: 8px;
@@ -1097,8 +1118,6 @@ main .total-order .price-total .next-btn {
   color: #fff;
   margin-left: auto;
   margin-right: auto;
-  font-size: 15px;
-  font-weight: 300;
 }
 main .product .tovar-basket .tovar-center {
   display: -ms-flexbox;
@@ -1166,10 +1185,6 @@ main .comparison .select-set .dropdown-toggle:focus {
 }
 main .comparison .select-set .dropdown-toggle:hover {
   color: #000;
-}
-main .comparison .tovar {
-  margin-right: 5px;
-  margin-left: 5px;
 }
 main .comparison .tovar .price-look {
   margin-bottom: 25px;

@@ -13,9 +13,9 @@
 	<link rel="stylesheet" href="fonts/font-awesome/css/font-awesome.min.css">
 	<script src="js/jquery/jquery-3.1.1.min.js"></script>
 	<script src="js/jquery/jquery-migrate-3.0.0.min.js"></script>
-	<script rel="stylesheet" src="js/owl-cariusel/owl.carousel.min.js"></script>
-	<script rel="stylesheet" src="bootstrap/js/bootstrap.min.js"></script>
-	<script rel="stylesheet" src="bootstrap/select/js/bootstrap-select.js"></script>
+	<script src="js/owl-cariusel/owl.carousel.min.js"></script>
+	<script src="bootstrap/js/bootstrap.min.js"></script>
+	<script src="bootstrap/select/js/bootstrap-select.js"></script>
 </head>
 <body>
 	<header>
@@ -30,7 +30,7 @@
 						    	<div class="modal-content">
 						    		<div class="modal-header modal-header-set">
 								    	<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-								        <h4 class="modal-title title-city">Выберете ваш город</h4>
+								        <h4 class="modal-titlрете ваш город</h4>
 								    </div>
 						    		<div class="row">
 						    			<div class="col-xs-6">
@@ -135,7 +135,7 @@
 				</div>
 			</div>
 		</div>
-		<div class="line-shadow">
+		<div class="line-shadow ident-shadow">
 			<div class="container">
 				<div class="row">
 					<div class="col-md-3">
@@ -243,8 +243,8 @@
 							</li>
 						</ul>
 					</div>
-					<a class="btn btn-set-blue ident" href="#">конфигуратор</a>	
-					<a class="btn btn-orange" href="#">Акции</a>
+					<a class="btn btn-set-blue ident" href="#">конфигуратор</a>
+					<a class="btn btn-orange" href="action.html">Акции</a>
 				</div>
 				<div class="col-md-8 col-lg-9 menu-right">
 					<div id="carousel-example-generic" class="carousel slide hidden-xs" data-ride="carousel">
@@ -263,14 +263,14 @@
 						        	<p class="price-slide">208 500 <i class="fa fa-rub" aria-hidden="true"></i></p>
 						        </div> -->
 						    </div>
-						    <!-- <div class="item big-slide-2">
-						        <img class="center-slide img-responsive" src="img/slide-2.png" alt="...">
-						        <div class="text-slide">
+						    <div class="item big-slide-2">
+						        <img class="center-slide img-responsive" src="img/slide/slide-2.jpg" alt="...">
+						        <!-- <div class="text-slide">
 						        	<h3 class="title-slide">PRAMAC<br> Eisemann P 10001 E</h3>
 						        	<p class="price-slide">22 740 <i class="fa fa-rub" aria-hidden="true"></i></p>
-						        </div>
+						        </div> -->
 						    </div>
-						    <div class="item big-slide-3">
+						    <!-- <div class="item big-slide-3">
 					        	<img class="center-slide img-responsive" src="img/slide-3.png" alt="...">
 								<div class="text-slide">
 						        	<h3 class="title-slide">Бензогенератор<br> Eisemann P 10001 E</h3>
@@ -280,14 +280,14 @@
 					    </div>
 
 					  <!-- Controls -->
-					    <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+<!-- 					    <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
 					    	<span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
 					    	<span class="sr-only">Previous</span>
 					    </a>
 					    <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
 					    	<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
 					    	<span class="sr-only">Next</span>
-					    </a>
+					    </a> -->
 					</div>
 				</div>
 			</div>
@@ -310,7 +310,7 @@
 				    		<form>
 				    			<div class="col-xs-6 col-md-4 col-sm-4">
 									<div class="form-group">
-										<label class="title-name">мощность</label>
+										<label class="title-name">Основная мощность:</label>
 										<div class="row">
 											<div class="col-md-6">
 												<div class="input-group input-ident">
@@ -334,9 +334,9 @@
 											<div class="col-md-12">
 												<label class="title-name">Тип старта</label>
 												<select class="selectpicker" data-width="100%">
-												    <option>все</option>
-												    <option>не все</option>
-												    <option>почти все</option>
+												    <option>Все</option>
+												    <option>Ручной</option>
+												    <option>Электростартер</option>
 												</select>
 											</div>
 										</div>
@@ -345,10 +345,12 @@
 									<div class="form-group">
 										<div class="row">
 											<div class="col-md-12">
-												<label class="title-name">напряжение</label>
+												<label class="title-name">Тип топлива</label>
 												<select class="selectpicker" data-width="100%">
-												    <option>220 в</option>
-												    <option>380 в</option>
+												    <option>Все</option>
+												    <option>Бензиновый</option>
+												    <option>Газовый</option>
+												    <option>Дизельный</option>
 												</select>
 											</div>
 										</div>
@@ -356,7 +358,7 @@
 								</div>
 								<div class="col-xs-6 col-md-4 col-sm-4">
 									<div class="form-group">
-										<label class="title-name">макс. мощность</label>
+										<label class="title-name">Максимальная мощность:</label>
 										<div class="row">
 											<div class="col-md-6">
 												<div class="input-group input-ident">
@@ -377,17 +379,17 @@
 									<div class="form-group">
 										<div class="row">
 											<div class="col-md-12">
-												<label class="title-name">топливо</label>
+												<label class="title-name">Напряжение:</label>
 												<select class="selectpicker" data-width="100%">
-												    <option>все</option>
-												    <option>не все</option>
-												    <option>почти все</option>
+												    <option>Все</option>
+												    <option>220</option>
+												    <option>380</option>
 												</select>
 											</div>
 										</div>
 									</div>
 									<div class="form-group">
-										<label class="title-name">цена</label>
+										<label class="title-name">Цена</label>
 										<div class="row">
 											<div class="col-md-6">
 												<div class="input-group input-ident">
@@ -406,7 +408,7 @@
 									</div>
 								</div>		
 					    		<div class="col-md-4 col-sm-4">
-									<label class="title-name">производители</label>
+									<label class="title-name">Производители</label>
 									<div class="checkbox-selection col-md-offset-2">
 					                    <input type="checkbox" id="cummins" checked>
 					                    <label for="cummins">Cummins</label>
@@ -427,10 +429,10 @@
 					                    <label for="kipor">Kipor</label>
 					
 					                    <input type="checkbox" id="mirkon">
-					                    <label for="mirkon">mirkon energy</label>
+					                    <label for="mirkon">Mirkon energy</label>
 					
 					                    <input type="checkbox" id="kama">
-					                    <label for="kama">kama</label>
+					                    <label for="kama">Kama</label>
 					
 					                </div>
 					                <button class="btn btn-set-blue">найти</button>
@@ -439,7 +441,139 @@
 				    	</div>
 				    </div>
 				    <div class="tab-pane" id="panel2">
-						<h2>Компрессора</h2>
+						<div class="row">
+				    		<form>
+				    			<div class="col-xs-6 col-md-4 col-sm-4">
+									<div class="form-group">
+										<label class="title-name">Вид компрессора:</label>
+										<div class="row">
+											<div class="col-md-6">
+												<div class="input-group input-ident">
+													<span class="input-group-addon">от</span>
+													<input type="text" class="form-control" name="arrFilter_1_MIN" id="arrFilter_1_MIN" value="0.1">
+												</div>
+											</div>
+																			
+											<div class="col-md-6">
+												<div class="input-group input-ident">
+													<span class="input-group-addon">до</span>
+													<input type="text" class="form-control" name="arrFilter_1_MAX" id="arrFilter_1_MAX" value="600">
+												</div>
+											</div>
+										</div>
+									</div>
+								
+									
+									<div class="form-group">
+										<div class="row">
+											<div class="col-md-12">
+												<label class="title-name">Рабочее давление:</label>
+												<select class="selectpicker" data-width="100%">
+												    <option>Все</option>
+												    <option>Ручной</option>
+												    <option>Электростартер</option>
+												</select>
+											</div>
+										</div>
+									</div>
+								
+									<div class="form-group">
+										<div class="row">
+											<div class="col-md-12">
+												<label class="title-name">Безмасляный:</label>
+												<select class="selectpicker" data-width="100%">
+												    <option>Все</option>
+												    <option>Бензиновый</option>
+												    <option>Газовый</option>
+												    <option>Дизельный</option>
+												</select>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="col-xs-6 col-md-4 col-sm-4">
+									<div class="form-group">
+										<label class="title-name">Производительность:</label>
+										<div class="row">
+											<div class="col-md-6">
+												<div class="input-group input-ident">
+													<span class="input-group-addon">от</span>
+													<input type="text" class="form-control" name="arrFilter_1_MIN" id="arrFilter_1_MIN" value="1.1">
+												</div>
+											</div>
+																			
+											<div class="col-md-6">
+												<div class="input-group input-ident">
+													<span class="input-group-addon">до</span>
+													<input type="text" class="form-control" name="arrFilter_1_MAX" id="arrFilter_1_MAX" value="660">
+												</div>
+											</div>
+										</div>
+									</div>
+								
+									<div class="form-group">
+										<div class="row">
+											<div class="col-md-12">
+												<label class="title-name">Трехфазный:</label>
+												<select class="selectpicker" data-width="100%">
+												    <option>Все</option>
+												    <option>220</option>
+												    <option>380</option>
+												</select>
+											</div>
+										</div>
+									</div>
+									<div class="form-group">
+										<label class="title-name">Цена</label>
+										<div class="row">
+											<div class="col-md-6">
+												<div class="input-group input-ident">
+													<span class="input-group-addon">от</span>
+													<input type="text" class="form-control" name="arrFilter_1_MIN" id="arrFilter_1_MIN" value="50000р">
+												</div>
+											</div>
+											
+											<div class="col-md-6">
+												<div class="input-group input-ident">
+													<span class="input-group-addon">до</span>
+													<input type="text" class="form-control" name="arrFilter_1_MAX" id="arrFilter_1_MAX" value="200000р">
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>		
+					    		<div class="col-md-4 col-sm-4">
+									<label class="title-name">Производители</label>
+									<div class="checkbox-selection col-md-offset-2">
+					                    <input type="checkbox" id="cummins" checked>
+					                    <label for="cummins">Cummins</label>
+					
+					                    <input type="checkbox" id="endress">
+					                    <label for="endress">Endress</label>
+					
+					                    <input type="checkbox" id="fubag" checked>
+					                    <label for="fubag">Fubag</label>
+					
+					                    <input type="checkbox" id="geko">
+					                    <label for="geko">Geko</label>
+					
+					                    <input type="checkbox" id="generac">
+					                    <label for="generac">Generac</label>
+					
+					                    <input type="checkbox" id="kipor">
+					                    <label for="kipor">Kipor</label>
+					
+					                    <input type="checkbox" id="mirkon">
+					                    <label for="mirkon">Mirkon energy</label>
+					
+					                    <input type="checkbox" id="kama">
+					                    <label for="kama">Kama</label>
+					
+					                </div>
+					                <button class="btn btn-set-blue">найти</button>
+					    		</div>
+							</form>
+				    	</div>
 				    </div>
 				</div>
 			</div>
@@ -808,17 +942,17 @@
 				</div>
 			</div>
 		</div>
-		<div class="grey-line">
+		<div class="grey-line border-line">
 			<div class="container">
 				<div class="addition">
 					<div class="row">
 						<div class="col-md-4">
-							<img class="img-center" src="img/3-layers.jpg" alt="">
+							<img class="img-center" src="img/3-layers.png" alt="">
 							<h2>Пусконаладочные работы</h2>
 							<p>Наши специалисты оказывают полный комплекс услуг по настройке и введнию в эксплатацию оборудования, который включает в себя: диагностику оборудования, проверку правильности его подключения, проверку готовности двигателя, диагностику работоспособности оборудования во всех режимах работы, настройку параметров системы управления, запуск оборудования.</p>
 						</div>
 						<div class="col-md-4">
-							<img class="img-center" src="img/2-layers.jpg" alt="">
+							<img class="img-center" src="img/2-layers.png" alt="">
 							<h2>Дополнительные услуги</h2>
 							<ul>
 								<li>
@@ -836,7 +970,7 @@
 							</ul>
 						</div>
 						<div class="col-md-4">
-							<img class="img-center" src="img/1-layers.jpg" alt="">
+							<img class="img-center" src="img/1-layers.png" alt="">
 							<h2>гарантия</h2>
 							<p>18 месяцев с момента отгрузки или 12 месяцев с момента ввода в эксплуатацию или 2000 моточасов.</p>
 						</div>

@@ -1,6 +1,6 @@
 .catalog-menu {
-	margin-top: 10px;
-	margin-bottom: 25px;
+	// margin-top: 10px;
+	margin-bottom: 30px;
 
 	
 	.name-catalog {
@@ -30,7 +30,7 @@
 					font-weight: 400;
 					&:hover {
 						text-decoration: none;
-						color: #ff8516;
+						color: #ec0101;
 					}
 
 					&:focus {
@@ -61,7 +61,7 @@
 	.btn-orange {
 		text-align: left;
 		font: 400 18px "Roboto", "Arial", sans-serif;
-		padding: 11px 0px 11px 35px;
+		padding: 9px 0px 9px 35px;
 		background: #ec0101 url("img/attention.png") no-repeat 10px;
 		background-size: 18px;
 	}
@@ -114,12 +114,15 @@
 
 	.item {
 		border-radius: 4px;
-		.center-slide {
-		 	position: absolute;
-		    top: 50%;
-		    margin-top: -160px;
-		    margin-left: 5%;
+		img {
+			border-radius: 4px;
 		}
+		// .center-slide {
+		//  	position: absolute;
+		//     top: 50%;
+		//     margin-top: -160px;
+		//     margin-left: 5%;
+		// }
 
 		.text-slide {
 			position: absolute;
@@ -163,7 +166,6 @@ form {
 	.title-name {
 		display: block;
 		font-weight: 400;
-		text-transform: uppercase;
 		text-align: center;
 	}
 
@@ -194,10 +196,14 @@ form {
 				background: #fff;
 				color: #000;
 			}
+
+			.filter-option {
+				text-transform: capitalize;
+			}
 		}
 		
 		.open>.dropdown-toggle.btn-info {
-			background: #ff8516;
+			background: #012978;
 			border-color: transparent;
 			box-shadow: none;
 		}
@@ -205,9 +211,9 @@ form {
 		.dropdown-menu {
 			padding: 0;
 			ul {
+				border-radius: 4px !important;
 				li {
 					a {
-						text-transform: uppercase;
 						&:focus {
 							outline: none !important;
 							background: #fff;
@@ -215,8 +221,24 @@ form {
 						}
 
 						&:hover {
-							background: #ff8516;
-							color: #000;
+							background: #012978;
+							color: #fff;
+						}
+					}
+					&:first-child {
+						&:hover {
+							a {
+								border-top-left-radius: 4px;
+								border-top-right-radius: 4px;
+							}
+						}
+					}
+					&:last-child {
+						&:hover {
+							a {
+								border-bottom-left-radius: 4px;
+								border-bottom-right-radius: 4px;
+							}
 						}
 					}
 				}
@@ -250,7 +272,6 @@ form {
 		    padding-bottom: 5px;
 		    padding-left: 30px;
 		    font: 15px/20px "PT Sans","Arial",sans-serif;
-		    text-transform: uppercase;
 		    cursor: pointer;
 		    color: #000;
 		    &::before {
