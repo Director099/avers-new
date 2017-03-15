@@ -937,7 +937,7 @@ main .tovar-navigation .lk-menu.active {
   transition: 250ms ease-in;
 }
 main .tovar-navigation.navigation-ident .tab {
-  text-transform: capitalize;
+  text-transform: none;
   font-size: 14px;
 }
 main .tovar-navigation.tovar-ident {
