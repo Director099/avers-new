@@ -106,9 +106,31 @@
 		box-shadow: 0 0 7px 1px rgba(0, 0, 0, 0.32);
 		.left {
 			background: transparent;
+			span {
+				opacity: 0;
+			}
 		}
 		.right {
 			background: transparent;
+			span {
+				opacity: 0;
+			}
+		}
+		&:hover {
+			.right {
+				background: transparent;
+				span {
+					transition: 250ms;
+					opacity: 1;
+				}
+			}
+			.left {
+				background: transparent;
+				span {
+					transition: 250ms;
+					opacity: 1;
+				}
+			}
 		}
 	}
 

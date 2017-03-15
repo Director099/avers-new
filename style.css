@@ -756,8 +756,28 @@ footer .ident-bottom .block-right .oplata {
 .catalog-menu .carousel .left {
   background: transparent;
 }
+.catalog-menu .carousel .left span {
+  opacity: 0;
+}
 .catalog-menu .carousel .right {
   background: transparent;
+}
+.catalog-menu .carousel .right span {
+  opacity: 0;
+}
+.catalog-menu .carousel:hover .right {
+  background: transparent;
+}
+.catalog-menu .carousel:hover .right span {
+  transition: 250ms;
+  opacity: 1;
+}
+.catalog-menu .carousel:hover .left {
+  background: transparent;
+}
+.catalog-menu .carousel:hover .left span {
+  transition: 250ms;
+  opacity: 1;
 }
 .catalog-menu .item {
   border-radius: 4px;
