@@ -424,7 +424,7 @@ header {
 	padding-right: 20px;
 	.price {
 		padding-top: 20px;
-		font: 900 40px/40px "Roboto", "Arial", sans-serif;
+		font: 400 40px/40px "Roboto", "Arial", sans-serif;
 		position: relative;
 		.price-icon {
 			font-size: 25px;
@@ -432,6 +432,25 @@ header {
 	}
 
 	form {
+		.availability {
+			display: flex;
+			justify-content: space-between;
+			flex-wrap: wrap;
+			.old-price {
+			    text-decoration: line-through;
+			    color: #ec0101;
+			    font-size: 34px;
+			    font-weight: 300;
+			    margin-bottom: 5px;
+			    .price-icon {
+			    	font-size: 16px;
+			    }
+			}
+			.text-availability {
+				display: flex;
+				align-items: baseline;
+			}
+		}
 		.text-center {
 			display: flex;
 			align-items: baseline;
@@ -448,7 +467,7 @@ header {
 			&.credit {
 				margin-left: 5px;
 				padding-bottom: 10px;
-				border-bottom: 3px solid #ff8516;
+				border-bottom: 3px solid #ec0101;
 			}
 		}
 		.checkbox {
@@ -462,7 +481,7 @@ header {
 				width: 50%;
 				padding-bottom: 10px;
 				&.border-color {
-					border-right: 1px solid #ff8516;
+					border-right: 1px solid #ec0101;
 				}
 
 				.size-icon {
@@ -495,7 +514,7 @@ header {
 
 	.tab {
 		display: block;
-		font-weight: 400;
+		font-weight: 300;
 		font-size: 18px;
 		position: relative;
 		text-decoration: none;

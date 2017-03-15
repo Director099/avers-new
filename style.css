@@ -356,11 +356,35 @@ header .line-orange .ident-icon {
 }
 .in-total .price {
   padding-top: 20px;
-  font: 900 40px/40px "Roboto", "Arial", sans-serif;
+  font: 400 40px/40px "Roboto", "Arial", sans-serif;
   position: relative;
 }
 .in-total .price .price-icon {
   font-size: 25px;
+}
+.in-total form .availability {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: justify;
+      justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+.in-total form .availability .old-price {
+  text-decoration: line-through;
+  color: #ec0101;
+  font-size: 34px;
+  font-weight: 300;
+  margin-bottom: 5px;
+}
+.in-total form .availability .old-price .price-icon {
+  font-size: 16px;
+}
+.in-total form .availability .text-availability {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: baseline;
+      align-items: baseline;
 }
 .in-total form .text-center {
   display: -ms-flexbox;
@@ -379,7 +403,7 @@ header .line-orange .ident-icon {
 .in-total form .text-center.credit {
   margin-left: 5px;
   padding-bottom: 10px;
-  border-bottom: 3px solid #ff8516;
+  border-bottom: 3px solid #ec0101;
 }
 .in-total form .checkbox {
   display: -ms-flexbox;
@@ -399,7 +423,7 @@ header .line-orange .ident-icon {
   padding-bottom: 10px;
 }
 .in-total form .checkbox label.border-color {
-  border-right: 1px solid #ff8516;
+  border-right: 1px solid #ec0101;
 }
 .in-total form .checkbox label .size-icon {
   font-size: 20px;
@@ -423,7 +447,7 @@ header .line-orange .ident-icon {
 }
 .tovar-navigation .tab {
   display: block;
-  font-weight: 400;
+  font-weight: 300;
   font-size: 18px;
   position: relative;
   text-decoration: none;
@@ -1097,7 +1121,7 @@ main .total-order .tovar-basket .price-look .price {
 }
 main .total-order .tovar-basket .price-look .price.old-price {
   text-decoration: line-through;
-  color: #ff9635;
+  color: #ec0101;
   font-size: 20px;
   font-weight: 300;
   margin-bottom: 5px;
