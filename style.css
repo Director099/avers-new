@@ -38,7 +38,7 @@ body {
   color: #fff;
 }
 .btn-orange img {
-  margin-bottom: 5px;
+  margin-bottom: 6px;
   width: 16px;
 }
 .btn-set-blue {
@@ -332,7 +332,7 @@ header .line-orange .ident-icon {
 .main-characteristics li {
   position: relative;
   padding-left: 40px;
-  background: url("img/sprite-char.png") no-repeat -24px -12px;
+  background: url("img/sprite-char.png") no-repeat -23px -16px;
   margin-bottom: 10px;
   margin-top: 20px;
 }
@@ -340,13 +340,13 @@ header .line-orange .ident-icon {
   font-weight: 900;
 }
 .main-characteristics .norm {
-  background-position: -20px -165px;
+  background-position: -25px -175px;
 }
 .main-characteristics .reserve {
-  background-position: -20px -245px;
+  background-position: -25px -255px;
 }
 .main-characteristics .generator {
-  background-position: -22px -86px;
+  background-position: -25px -96px;
 }
 .in-total {
   background: #eee;
@@ -386,6 +386,9 @@ header .line-orange .ident-icon {
   -ms-flex-align: baseline;
       align-items: baseline;
 }
+.in-total form .availability .text-availability .fa-check-square-o {
+  font-size: 30px;
+}
 .in-total form .text-center {
   display: -ms-flexbox;
   display: flex;
@@ -394,6 +397,8 @@ header .line-orange .ident-icon {
 }
 .in-total form .text-center p {
   margin-bottom: 0;
+}
+.in-total form .text-center .free-delivery {
   margin-left: 10px;
 }
 .in-total form .text-center a {
